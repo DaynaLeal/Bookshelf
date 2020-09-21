@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "id": "1",
+    "author": "J.K. Rowling",
+    "publishedYear": 1997,
+    "pageCount": 293,
+    "type": "book",
+    "description": "When mysterious letters start arriving on his doorstep, Harry Potter has never heard of Hogwarts School of Witchcraft and Wizardry. They are swiftly confiscated by his aunt and uncle. Then, on Harry’s eleventh birthday, a strange man bursts in with some important news: Harry Potter is a wizard and has been awarded a place to study at Hogwarts. And so the first of the Harry Potter adventures is set to begin.",
+    "rating": 5,
+    "review": "Great book"
+  },
+  {
+    "title": "Harry Potter and the Chamber of Secrets",
+    "id": "2",
+    "author": "J.K. Rowling",
+    "publishedYear": 1998,
+    "pageCount": 341,
+    "type": "book",
+    "description": "Harry Potter and the Chamber of Secrets is a fantasy novel written by British author J. K. Rowling and the second novel in the Harry Potter series.",
+    "rating": 5,
+    "review": "Great book"
+  },
+  {
+    "title": "Harry Potter and the Prizoner of Azkaban",
+    "id": "3",
+    "author": "J.K. Rowling",
+    "publishedYear": 1999,
+    "pageCount": 435,
+    "type": "book",
+    "description": "For twelve long years, the dread fortress of Azkaban held an infamous prisoner named Sirius Black. Convicted of killing thirteen people with a single curse, he was said to be the heir apparent to the Dark Lord, Voldemort. Now he has escaped, leaving only two clues as to where he might be headed: Harry Potter's defeat of You-Know-Who was Black's downfall as well. And the Azkaban guards heard Black muttering in his sleep, \"He's at Hogwarts . . . he's at Hogwarts.\" Harry Potter isn't safe, not even within the walls of his magical school, surrounded by his friends. Because on top of it all, there may well be a traitor in their midst.",
+    "rating": 5,
+    "review": "Great book"
+  }
+]
