@@ -1,10 +1,13 @@
-import express from 'express'
+import express, { urlencoded } from 'express'
 import cors from 'cors'
+import bodyParser from 'body-parser'
 import routeHandler from './routes'
 
 const app = express()
 
 app.use(cors())
+app.use(bodyParser.json())
+app.use(urlencoded({ extended: false }))
 
 //route handler
 routeHandler(app)
