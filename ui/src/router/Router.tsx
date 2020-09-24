@@ -10,8 +10,8 @@ const Router = () => {
       <Suspense fallback={<div>Loading Content...</div>}>
         <main>
           <Switch>
-            <Route path='/' component={Landing}/>
             <Route path='/mybooks' component={Mybooks}/>
+            <Route path='/' component={Landing}/>
             <Redirect from="/" to="/"/>
           </Switch>
         </main>

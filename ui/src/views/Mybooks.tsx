@@ -2,7 +2,7 @@ import React from 'react'
 
 const Mybooks = () => {
   return(
-    <div>Landing Page</div>
+    <div>List of Books Page</div>
   )
 }
 
