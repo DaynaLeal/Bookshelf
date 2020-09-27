@@ -6,8 +6,9 @@ import routeHandler from './routes'
 const app = express()
 
 app.use(cors())
+app.use(urlencoded({ extended: true }))
 app.use(bodyParser.json())
-app.use(urlencoded({ extended: false }))
+
 
 //route handler
 routeHandler(app)

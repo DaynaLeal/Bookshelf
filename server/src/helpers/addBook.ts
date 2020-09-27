@@ -1,6 +1,6 @@
 import { Request, Response} from 'express'
 
-import books from "../../static-data/myBooks.json"
+import books from '../../static-data/myBooks.json'
 
 const addBook = (req: Request, res: Response): void => {
   
