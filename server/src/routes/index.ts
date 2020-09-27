@@ -2,6 +2,7 @@ import { Express } from 'express'
 
 import fetchBooks from '../helpers/fetchBooks'
 import fetchABook from '../helpers/fetchABook'
+import addBook from '../helpers/addBook'
 
 const routeHandler = (app: Express): void => {
   //get ALL my books
@@ -12,6 +13,11 @@ const routeHandler = (app: Express): void => {
   //get a specific book by id
   app.get('/books/:id', (req, res) => {
     fetchABook(req, res)
+  })
+
+  //add a book
+  app.post('/books/add', (req, res) => {
+    addBook(req, res)
   })
 }
 
