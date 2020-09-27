@@ -11,7 +11,7 @@ const routeHandler = (app: Express): void => {
 
   //get a specific book by id
   app.get('/books/:id', (req, res) => {
-    //fetchABook(req, res)
+    fetchABook(req, res)
   })
 }
 

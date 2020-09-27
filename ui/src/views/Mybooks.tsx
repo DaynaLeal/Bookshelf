@@ -35,13 +35,13 @@ const Mybooks = ({ routeProps }: Props) => {
       <div className="bookShelf">
         {books.map(book => (
           <div key={uuid()}>
-            <p>{book.title}</p>
-            <p>{book.author}</p>
-            <p>{book.genre}</p>
-            <p>{book.publishedYear}</p>
-            <p>{book.pageCount}</p>
-            <p>{book.description}</p>
-            <p>{book.review}</p>
+            <p>Title: {book.title}</p>
+            <p>Author: {book.author}</p>
+            <p>Genre: {book.genre}</p>
+            <p>Year Published: {book.publishedYear}</p>
+            <p>Page Count: {book.pageCount}</p>
+            <p>Description: {book.description}</p>
+            <p>My Review: {book.review}</p>
             <hr/>
           </div>
         ))}
