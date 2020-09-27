@@ -18,7 +18,7 @@ const addBook = (req: Request, res: Response): void => {
   }
 
   books.push(book)
-  res.json(book)
+  res.json(books)
 }
 
 export default addBook
