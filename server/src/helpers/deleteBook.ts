@@ -7,11 +7,10 @@ const books: { [key: string]: Book } = rawBooks
 
 const deleteBook = (req: Request, res: Response): void => {
   const requestId = req.params.id
-  // const targetBook = books[requestId]
+  const deletedTitle = books[requestId].title
 
   delete books[requestId]
-
-  res.json({ message: `Book has been deleted`})
+  res.json({ message: `Book titled ${deletedTitle} has been deleted`})
 }
 
 export default deleteBook
