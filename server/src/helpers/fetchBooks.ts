@@ -4,7 +4,7 @@ import books from '../../static-data/myBooks.json'
 
 const fetchBooks = (req: Request, res: Response): void => {
   console.log('get request', req.path)
-  const allBooks: Array<{}> = Object.values(books)
+  const allBooks = Object.values(books)
   res.json(allBooks)
 }
 

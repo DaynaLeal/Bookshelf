@@ -12,9 +12,9 @@
 //   const index: number = books.indexOf(book)
 //   const keys = Object.keys(req.body)
 
-//   keys.forEach(key => {
-//     book[key] = req.body[key]
-//   })
+  // keys.forEach(key => {
+  //   book[key] = req.body[key]
+  // })
 
 //   books[index] = book
 
@@ -24,4 +24,3 @@
 
 // export default editBook
 
-// // https://scotch.io/courses/build-a-restful-nodejs-api/post-put-delete-requests
