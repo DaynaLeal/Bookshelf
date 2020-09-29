@@ -6,7 +6,6 @@ import Mybooks from '../views/Mybooks'
 
 const Router = () => {
   return(
-    <>
       <Suspense fallback={<div>Loading Content...</div>}>
         <main>
           <Switch>
@@ -16,7 +15,6 @@ const Router = () => {
           </Switch>
         </main>
       </Suspense>
-    </>
   )
 }
 

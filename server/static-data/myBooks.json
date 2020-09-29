@@ -1,7 +1,7 @@
-[
-  {
+{
+  "123": {
     "title": "Harry Potter and the Sorcerer's Stone",
-    "id": "1",
+    "id": "123",
     "author": "J.K. Rowling",
     "genre": "Young Adult Fantasy",
     "publishedYear": 1997,
@@ -11,9 +11,9 @@
     "rating": 5,
     "review": "Great book"
   },
-  {
+  "234": {
     "title": "Harry Potter and the Chamber of Secrets",
-    "id": "2",
+    "id": "234",
     "author": "J.K. Rowling",
     "genre": "Young Adult Fantasy",
     "publishedYear": 1998,
@@ -23,9 +23,9 @@
     "rating": 5,
     "review": "Great book"
   },
-  {
+  "345": {
     "title": "Harry Potter and the Prizoner of Azkaban",
-    "id": "3",
+    "id": "345",
     "author": "J.K. Rowling",
     "genre": "Young Adult Fantasy",
     "publishedYear": 1999,
@@ -35,4 +35,4 @@
     "rating": 5,
     "review": "Great book"
   }
-]
+}
