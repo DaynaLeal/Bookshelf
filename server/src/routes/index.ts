@@ -3,7 +3,7 @@ import { Express } from 'express'
 import fetchBooks from '../helpers/fetchBooks'
 import fetchABook from '../helpers/fetchABook'
 // import addBook from '../helpers/addBook'
-// import deleteBook from '../helpers/deleteBook'
+import deleteBook from '../helpers/deleteBook'
 // import editBook from '../helpers/editBook'
 
 const routeHandler = (app: Express): void => {
@@ -12,12 +12,12 @@ const routeHandler = (app: Express): void => {
     fetchBooks(req, res)
   })
 
-  // //get a specific book by id
+  //get a specific book by id
   app.get('/books/:id', (req, res) => {
     fetchABook(req, res)
   })
 
-  // //add a book
+  //add a book
   // app.post('/books/add', (req, res) => {
   //   addBook(req, res)
   // })
@@ -27,10 +27,10 @@ const routeHandler = (app: Express): void => {
   //   editBook(req, res)
   // })
 
-  // //delete a book
-  // app.delete('/books/delete/:id', (req, res) => {
-  //   deleteBook(req, res)
-  // })
+  //delete a book
+  app.delete('/books/delete/:id', (req, res) => {
+    deleteBook(req, res)
+  })
 }
 
 export default routeHandler

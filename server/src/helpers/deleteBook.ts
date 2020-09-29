@@ -1,18 +1,18 @@
-// import { Request, Response} from 'express'
+import { Request, Response} from 'express'
 
-// import books from '../../static-data/myBooks.json'
+import rawBooks from '../../static-data/myBooks.json'
+import {Book} from '../interfaces/Book'
 
-// const deleteBook = (req: Request, res: Response): void => {
-//   const requestId = req.params.id
-//   let book = books.filter(book => {
-//     return book.id == requestId
-//   })[0]
+const books: { [key: string]: Book } = rawBooks
 
-//   const index: number = books.indexOf(book)
-//   books.splice(index, 1)
+const deleteBook = (req: Request, res: Response): void => {
+  const requestId = req.params.id
+  // const targetBook = books[requestId]
 
-//   res.json({ message: `Book has been deleted`})
-// }
+  delete books[requestId]
 
-// export default deleteBook
+  res.json({ message: `Book has been deleted`})
+}
+
+export default deleteBook
 
