@@ -1,26 +1,32 @@
-// import { Request, Response} from 'express'
+import { Request, Response} from 'express'
 
-// import books from '../../static-data/myBooks.json'
+import rawBooks from '../../static-data/myBooks.json'
+import {Book} from '../interfaces/Book'
 
-// const editBook = (req: Request, res: Response): void => {
+const books: { [key: string]: Book } = rawBooks
+
+const editBook = (req: Request, res: Response): void => {
+  const requestId = req.params.id
+
+  const { title, id, author, genre, publishedYear, pageCount, type, description, rating, review } = req.body as Book
+
+  const book = {
+    title,
+    id,
+    author,
+    genre,
+    publishedYear,
+    pageCount,
+    type,
+    description,
+    rating,
+    review
+  }
+
+  books[requestId] = book
+  res.json(book)
   
-//   const requestId = req.params.id
-//   let book = books.filter(book => {
-//     return book.id == requestId
-//   })[0]
+} 
 
-//   const index: number = books.indexOf(book)
-//   const keys = Object.keys(req.body)
-
-  // keys.forEach(key => {
-  //   book[key] = req.body[key]
-  // })
-
-//   books[index] = book
-
-//   res.json(books[index])
-  
-// } 
-
-// export default editBook
+export default editBook
 

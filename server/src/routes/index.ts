@@ -4,7 +4,7 @@ import fetchBooks from '../helpers/fetchBooks'
 import fetchABook from '../helpers/fetchABook'
 import addBook from '../helpers/addBook'
 import deleteBook from '../helpers/deleteBook'
-// import editBook from '../helpers/editBook'
+import editBook from '../helpers/editBook'
 
 const routeHandler = (app: Express): void => {
   //get ALL my books
@@ -23,9 +23,9 @@ const routeHandler = (app: Express): void => {
   })
 
   //edit a book
-  // app.put('/books/edit/:id', (req, res) => {
-  //   editBook(req, res)
-  // })
+  app.put('/books/edit/:id', (req, res) => {
+    editBook(req, res)
+  })
 
   //delete a book
   app.delete('/books/delete/:id', (req, res) => {
