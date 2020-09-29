@@ -1,24 +1,29 @@
-// import { Request, Response} from 'express'
+import { raw, Request, Response} from 'express'
 
-// import books from '../../static-data/myBooks.json'
+import rawBooks from '../../static-data/myBooks.json'
+import {Book} from '../interfaces/Book'
 
-// const addBook = (req: Request, res: Response): void => {
-  
-//   const book = {
-//     title: req.body.title,
-//     id : req.body.id,
-//     author: req.body.author,
-//     genre: req.body.genre,
-//     publishedYear: req.body.publishedYear,
-//     pageCount: req.body.pageCount,
-//     type: req.body.type,
-//     description: req.body.description,
-//     rating: req.body.rating,
-//     review: req.body.review
-//   }
+const books: { [key: string]: Book } = rawBooks
 
-//   books.push(book)
-//   res.json(book)
-// }
+const addBook = (req: Request, res: Response): void => {
+  const { title, id, author, genre, publishedYear, pageCount, type, description, rating, review } = req.body as Book
 
-// export default addBook
+  const book = {
+    title,
+    id,
+    author,
+    genre,
+    publishedYear,
+    pageCount,
+    type,
+    description,
+    rating,
+    review
+  }
+
+  const newKey = book.id
+  books[newKey] = book
+  res.json({ message: `Book titled ${book.title} has been added`})
+}
+
+export default addBook

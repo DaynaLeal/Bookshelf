@@ -2,7 +2,7 @@ import { Express } from 'express'
 
 import fetchBooks from '../helpers/fetchBooks'
 import fetchABook from '../helpers/fetchABook'
-// import addBook from '../helpers/addBook'
+import addBook from '../helpers/addBook'
 import deleteBook from '../helpers/deleteBook'
 // import editBook from '../helpers/editBook'
 
@@ -18,9 +18,9 @@ const routeHandler = (app: Express): void => {
   })
 
   //add a book
-  // app.post('/books/add', (req, res) => {
-  //   addBook(req, res)
-  // })
+  app.post('/books/add', (req, res) => {
+    addBook(req, res)
+  })
 
   //edit a book
   // app.put('/books/edit/:id', (req, res) => {
