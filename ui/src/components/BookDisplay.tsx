@@ -21,7 +21,7 @@ const BookDisplay: FC<BookProps> = ({
   </div>
 )
 
-type BookProps = {
+interface BookProps {
   title: string,
   author: string,
   genre: string,

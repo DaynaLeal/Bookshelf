@@ -36,7 +36,7 @@ const MyBooks = ({ routeProps }: Props) => {
       <h2>Bookshelf</h2>
       <div className="shelf">
         {books.map(book => (
-          <BookDisplay key={uuid()} title={book.title} author={book.author} genre={book.genre} publishedYear={book.publishedYear} pageCount={book.pageCount} description={book.description} review={book.review}/>
+          <BookDisplay key={uuid()} {...book}/>
         ))}
       </div>
     </>
