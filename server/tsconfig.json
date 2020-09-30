@@ -15,7 +15,7 @@
     },
     "resolveJsonModule": true
   },
-  "exclude": ["../db"]
+
 }
 
 // https://www.typescriptlang.org/tsconfig

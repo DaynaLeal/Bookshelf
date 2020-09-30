@@ -9,8 +9,6 @@ app.use(cors())
 app.use(urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
-
-//route handler
 routeHandler(app)
 
 const PORT = process.env.PORT || 5000

@@ -1,4 +1,4 @@
-import { raw, Request, Response} from 'express'
+import { Request, Response} from 'express'
 
 import rawBooks from '../../static-data/myBooks.json'
 import {Book} from '../interfaces/Book'
