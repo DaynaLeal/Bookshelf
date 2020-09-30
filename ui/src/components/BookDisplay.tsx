@@ -1,5 +1,4 @@
 import React, { FC } from 'react'
-import { v4 as uuid } from 'uuid'
 
 const BookDisplay: FC<BookProps> = ({
   title,
@@ -10,7 +9,7 @@ const BookDisplay: FC<BookProps> = ({
   description,
   review,
 }) => (
-  <div key={uuid()}>
+  <div>
     <p>Title: {title}</p>
     <p>Author: {author}</p>
     <p>Genre: {genre}</p>
