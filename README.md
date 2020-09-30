@@ -1,6 +1,6 @@
 # Bookshelf
 
-This full stack application will allow users to search for books in the Google Books API, read and review books, and keep track of their reading. This application was developed using TypeScript, Node.js, Express and React.
+This full stack application will allow users to search for books in the Google Books API, read and review books, and keep track of their reading. This application was developed using TypeScript, Express and React.
 
 ## Setup
 

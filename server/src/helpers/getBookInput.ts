@@ -1,10 +1,10 @@
 import { Request } from 'express'
 import {Book} from '../interfaces/Book'
 
-const pullReqBody = (req: Request): Book => {
+const getBookInput = (req: Request): Book => {
   const { title, id, author, genre, publishedYear, pageCount, type, description, rating, review } = req.body as Book
 
-  const book = {
+  const bookInput = {
     title,
     id,
     author,
@@ -17,7 +17,7 @@ const pullReqBody = (req: Request): Book => {
     review
   }
 
-  return book
+  return bookInput
 }
 
-export default pullReqBody
+export default getBookInput
