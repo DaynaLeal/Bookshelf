@@ -2,24 +2,12 @@ import { Request, Response} from 'express'
 
 import rawBooks from '../../static-data/myBooks.json'
 import {Book} from '../interfaces/Book'
+import pullReqBody from './pullReqBody'
 
 const books: { [key: string]: Book } = rawBooks
 
 const addBook = (req: Request, res: Response): void => {
-  const { title, id, author, genre, publishedYear, pageCount, type, description, rating, review } = req.body as Book
-
-  const book = {
-    title,
-    id,
-    author,
-    genre,
-    publishedYear,
-    pageCount,
-    type,
-    description,
-    rating,
-    review
-  }
+  const book = pullReqBody(req)
 
   const newKey = book.id
   books[newKey] = book

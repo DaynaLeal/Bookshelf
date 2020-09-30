@@ -32,7 +32,7 @@ const MyBooks = ({ routeProps }: Props) => {
   ) : (
     <>
       <h2>Bookshelf</h2>
-      <div className="bookShelf">
+      <div className="shelf">
         {books.map(book => (
           <div key={uuid()}>
             <p>Title: {book.title}</p>
