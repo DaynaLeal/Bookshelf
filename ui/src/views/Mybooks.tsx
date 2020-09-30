@@ -50,7 +50,6 @@ const MyBooks = ({ routeProps }: Props) => {
   )
 }
 
-
 interface Props {
   routeProps: RouteProps
 }
@@ -63,5 +62,6 @@ export default MyBooks
 
 // useState and useEffect
 // https://www.youtube.com/watch?v=LZKsD_5ttZ4
+
 // .map(), lists, keys
 // https://reactjs.org/docs/lists-and-keys.html
