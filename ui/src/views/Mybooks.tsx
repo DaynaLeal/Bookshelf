@@ -6,7 +6,7 @@ import client from '../client'
 
 import { Book } from '../interfaces/book'
 
-const Mybooks = ({ routeProps }: Props) => {
+const MyBooks = ({ routeProps }: Props) => {
   console.log('route props', routeProps)
   const [books, setBooks] = useState<Book[]>([])
   const [isLoading, setIsLoading] = useState(true)
@@ -59,7 +59,7 @@ interface BookApiResponse {
   data: Book[]
 }
 
-export default Mybooks
+export default MyBooks
 
 // useState and useEffect
 // https://www.youtube.com/watch?v=LZKsD_5ttZ4
