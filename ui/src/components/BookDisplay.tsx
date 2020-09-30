@@ -1,8 +1,7 @@
 import React, { FC } from 'react'
 import { v4 as uuid } from 'uuid'
-import { Book } from '../interfaces/book'
 
-const BookDisplay: FC<Book> = ({
+const BookDisplay: FC<BookProps> = ({
   title,
   author,
   genre,
@@ -22,5 +21,15 @@ const BookDisplay: FC<Book> = ({
     <hr />
   </div>
 )
+
+type BookProps = {
+  title: string,
+  author: string,
+  genre: string,
+  publishedYear: number,
+  pageCount: number,
+  description: string,
+  review: string
+}
 
 export default BookDisplay

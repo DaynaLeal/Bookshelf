@@ -1,6 +1,6 @@
+import BookDisplay from 'components/BookDisplay'
 import React, { useState, useEffect } from 'react'
 import { RouteProps } from 'react-router-dom'
-import { v4 as uuid } from 'uuid'
 
 import client from '../client'
 
@@ -34,16 +34,7 @@ const MyBooks = ({ routeProps }: Props) => {
       <h2>Bookshelf</h2>
       <div className="shelf">
         {books.map(book => (
-          <div key={uuid()}>
-            <p>Title: {book.title}</p>
-            <p>Author: {book.author}</p>
-            <p>Genre: {book.genre}</p>
-            <p>Year Published: {book.publishedYear}</p>
-            <p>Page Count: {book.pageCount}</p>
-            <p>Description: {book.description}</p>
-            <p>My Review: {book.review}</p>
-            <hr/>
-          </div>
+          <BookDisplay title={book.title} author={book.author} genre={book.genre} publishedYear={book.publishedYear} pageCount={book.pageCount} description={book.description} review={book.review}/>
         ))}
       </div>
     </>
