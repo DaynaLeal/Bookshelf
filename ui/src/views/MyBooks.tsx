@@ -1,10 +1,10 @@
-import BookDisplay from 'components/BookDisplay'
+import 'bootstrap/dist/css/bootstrap.css';
 import React, { useState, useEffect } from 'react'
 import { RouteProps } from 'react-router-dom'
 import { v4 as uuid } from 'uuid'
 
-
 import client from '../client'
+import BookDisplay from 'components/BookDisplay'
 
 // import { Book } from '../interfaces/book'
 
@@ -46,22 +46,24 @@ const MyBooks = ({ routeProps }: Props) => {
   ) : (
     <>
       <h2>Bookshelf</h2>
-      <thead>
-          <tr>
-            <th onClick={() => sortByProperty('title')}>Title</th>
-            <th onClick={() => sortByProperty('author')}>Author</th>
-            <th onClick={() => sortByProperty('genre')}>Genre</th>
-            <th onClick={() => sortByProperty('publishedYear')}>Year Published</th>
-            <th onClick={() => sortByProperty('pageCount')}>Page Count</th>
-            <th>Description</th>
-            <th>My Review</th>
-          </tr>
+      <table>
+        <thead>
+            <tr>
+              <th onClick={() => sortByProperty('title')}>Title</th>
+              <th onClick={() => sortByProperty('author')}>Author</th>
+              <th onClick={() => sortByProperty('genre')}>Genre</th>
+              <th onClick={() => sortByProperty('publishedYear')}>Year Published</th>
+              <th onClick={() => sortByProperty('pageCount')}>Page Count</th>
+              <th>Description</th>
+              <th>My Review</th>
+            </tr>
         </thead>
-      <tbody className="shelf">
-        {books.map(book => (
-          <BookDisplay key={uuid()} {...book}/>
-        ))}
-      </tbody>
+        <tbody className="shelf">
+          {books.map(book => (
+            <BookDisplay key={uuid()} {...book}/>
+          ))}
+        </tbody>
+      </table>
     </>
   )
 }
@@ -95,3 +97,6 @@ export default MyBooks
 
 // .map(), lists, keys
 // https://reactjs.org/docs/lists-and-keys.html
+
+// bootstrap - react
+// https://create-react-app.dev/docs/adding-bootstrap/

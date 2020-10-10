@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import React, { FC } from 'react'
 
 const BookDisplay: FC<BookProps> = ({
