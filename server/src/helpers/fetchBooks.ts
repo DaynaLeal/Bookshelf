@@ -8,4 +8,4 @@ const fetchBooks = (req: Request, res: Response): void => {
   res.json(allBooks)
 }
 
-export default fetchBooks
+export default fetchBooks 

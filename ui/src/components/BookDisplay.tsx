@@ -9,16 +9,15 @@ const BookDisplay: FC<BookProps> = ({
   description,
   review,
 }) => (
-  <div>
-    <p>Title: {title}</p>
-    <p>Author: {author}</p>
-    <p>Genre: {genre}</p>
-    <p>Year Published: {publishedYear}</p>
-    <p>Page Count: {pageCount}</p>
-    <p>Description: {description}</p>
-    <p>My Review: {review}</p>
-    <hr />
-  </div>
+  <tr>
+    <td>{title}</td>
+    <td>{author}</td>
+    <td>{genre}</td>
+    <td>{publishedYear}</td>
+    <td>{pageCount}</td>
+    <td>{description}</td>
+    <td>{review}</td>
+  </tr>
 )
 
 interface BookProps {
