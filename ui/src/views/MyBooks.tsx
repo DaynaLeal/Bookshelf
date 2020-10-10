@@ -6,7 +6,6 @@ import { v4 as uuid } from 'uuid'
 import client from '../client'
 import BookDisplay from 'components/BookDisplay'
 
-// import { Book } from '../interfaces/book'
 
 const MyBooks = ({ routeProps }: Props) => {
   console.log('route props', routeProps)
@@ -45,7 +44,6 @@ const MyBooks = ({ routeProps }: Props) => {
     <h1>It may take a moment to collect all your books...</h1>
   ) : (
     <>
-      <h2>Bookshelf</h2>
       <table className="table">
         <thead className="thead-dark">
             <tr>

@@ -1,3 +1,4 @@
+import NavBar from 'components/NavBar'
 import React, { Suspense } from 'react'
 import { Switch, Route, Redirect, RouteProps } from 'react-router-dom'
 
@@ -6,6 +7,8 @@ import MyBooks from '../views/MyBooks'
 
 const Router = () => {
   return(
+    <>
+      <NavBar/>
       <Suspense fallback={<div>Loading Content...</div>}>
         <main>
           <Switch>
@@ -15,6 +18,7 @@ const Router = () => {
           </Switch>
         </main>
       </Suspense>
+    </>  
   )
 }
 
