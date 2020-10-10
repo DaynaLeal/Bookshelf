@@ -46,16 +46,16 @@ const MyBooks = ({ routeProps }: Props) => {
   ) : (
     <>
       <h2>Bookshelf</h2>
-      <table>
-        <thead>
+      <table className="table">
+        <thead className="thead-dark">
             <tr>
-              <th onClick={() => sortByProperty('title')}>Title</th>
-              <th onClick={() => sortByProperty('author')}>Author</th>
-              <th onClick={() => sortByProperty('genre')}>Genre</th>
-              <th onClick={() => sortByProperty('publishedYear')}>Year Published</th>
-              <th onClick={() => sortByProperty('pageCount')}>Page Count</th>
-              <th>Description</th>
-              <th>My Review</th>
+              <th scope="col" onClick={() => sortByProperty('title')}>Title</th>
+              <th scope="col" onClick={() => sortByProperty('author')}>Author</th>
+              <th scope="col" onClick={() => sortByProperty('genre')}>Genre</th>
+              <th scope="col" onClick={() => sortByProperty('publishedYear')}>Year Published</th>
+              <th scope="col" onClick={() => sortByProperty('pageCount')}>Page Count</th>
+              <th scope="col">Description</th>
+              <th scope="col">My Review</th>
             </tr>
         </thead>
         <tbody className="shelf">
