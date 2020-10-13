@@ -1,0 +1,42 @@
+{
+  "567": {
+    "title": "From Blood and Ash",
+    "id": "567",
+    "author": "Jennifer L. Armentrout",
+    "genre": "Adult Fantasy",
+    "publishedYear": 2019,
+    "pageCount": 625,
+    "type": "book",
+    "description": "Recommended by instagram readers, apparently has vampires."
+  },
+  "678": {
+    "title": "Court of Silver Flames",
+    "id": "678",
+    "author": "Sarah J. Maas",
+    "genre": "Adult Fantasy",
+    "publishedYear": 2021,
+    "pageCount": 550,
+    "type": "book",
+    "description": "ACOTAR Spinoff with Nesta and Cassian."
+  },
+  "789": {
+    "title": "Crescent City",
+    "id": "789",
+    "author": "Sarah J. Maas",
+    "genre": "Adult Fantasy",
+    "publishedYear": 2020,
+    "pageCount": 500,
+    "type": "book",
+    "description": "Newest SJM Series"
+  },
+  "890": {
+    "title": "Kingdom of Ash",
+    "id": "890",
+    "author": "Sarah J. Maas",
+    "genre": "Young Adult Fantasy",
+    "publishedYear": 2000,
+    "pageCount": 989,
+    "type": "book",
+    "description": "Final Throne of Glass book."
+  }
+}

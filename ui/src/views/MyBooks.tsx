@@ -43,7 +43,7 @@ const MyBooks = ({ routeProps }: Props) => {
   return isLoading ? (
     <h1>It may take a moment to collect all your books...</h1>
   ) : (
-    <>
+    <div className="container">
       <table className="table">
         <thead className="thead-dark">
             <tr>
@@ -62,7 +62,7 @@ const MyBooks = ({ routeProps }: Props) => {
           ))}
         </tbody>
       </table>
-    </>
+    </div>
   )
 }
 
