@@ -5,9 +5,10 @@ import fetchABook from '../helpers/fetchABook'
 import addBook from '../helpers/addBook'
 import deleteBook from '../helpers/deleteBook'
 import editBook from '../helpers/editBook'
+import fetchTBRList from '../helpers/fetchTBRList'
 
 const routeHandler = (app: Express): void => {
-  //get ALL my books
+  //get ALL my read books
   app.get('/books', (req, res) => {
     fetchBooks(req, res)
   })
@@ -30,6 +31,11 @@ const routeHandler = (app: Express): void => {
   //delete a book
   app.delete('/books/delete/:id', (req, res) => {
     deleteBook(req, res)
+  })
+
+  // get ALL TBR books
+  app.get('/books/tbr', (req, res) => {
+    fetchTBRList(req, res)
   })
 }
 
