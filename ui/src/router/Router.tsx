@@ -4,6 +4,7 @@ import { Switch, Route, Redirect, RouteProps } from 'react-router-dom'
 
 import Landing from '../views/Landing'
 import MyBooks from '../views/MyBooks'
+import AddBook from '../views/AddBook'
 
 const Router = () => {
   return(
@@ -13,6 +14,7 @@ const Router = () => {
         <main>
           <Switch>
             <Route path='/mybooks' render={(routeProps: RouteProps) => <MyBooks routeProps={routeProps} />} />
+            <Route path='/addBook' component={AddBook} />
             <Route path='/' component={Landing}/>
             <Redirect from="/" to="/"/>
           </Switch>
