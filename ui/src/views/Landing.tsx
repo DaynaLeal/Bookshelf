@@ -6,7 +6,7 @@ const Landing = () => {
     <div>
       <h1>Landing Page</h1>
       <Link to='/mybooks'>View My Bookshelf</Link>
-      <Link to='/addBooks'>Add a Book to My Bookshelf</Link>
+      <Link to='/addBook'>Add a Book to My Bookshelf</Link>
     </div>
   )
 }
