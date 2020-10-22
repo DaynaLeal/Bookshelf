@@ -1,0 +1,10 @@
+postgres: 
+  image: postgres:latest
+  environment: 
+    POSTGRES_PASSWORD: bookPass1
+    POSTGRES_USER: reader
+    POSTGRES_DB: my_library
+  ports:
+    - '5432:5432'
+  volumes:
+    - ./sql/seeder.sql:/docker-entrypoint-initdb.d/init.sql

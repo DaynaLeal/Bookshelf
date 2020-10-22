@@ -78,7 +78,7 @@ INSERT INTO
 VALUES
   ("print"),
   ("ebook"),
-  ("audiobook")  
+  ("audiobook");  
 
 INSERT INTO 
   books (author_id, series_id, title, published_year, page_count, series_number, medium, read_date, read_status, rating, review, description)
