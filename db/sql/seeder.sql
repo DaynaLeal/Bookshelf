@@ -76,7 +76,8 @@ VALUES
 INSERT INTO 
   medium (medium_type)
 VALUES
-  ("print"),
+  ("hardcover"),
+  ("paperback"),
   ("ebook"),
   ("audiobook");  
 
