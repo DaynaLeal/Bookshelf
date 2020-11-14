@@ -7,7 +7,7 @@ import AddForm from 'components/AddForm'
 const AddBook = () => {
   return(
     <div>
-      <h1>Add a Book To My Library</h1>
+      <h1 className="text-center">Add a Book To My Library</h1>
       <AddForm />
     </div>
   )

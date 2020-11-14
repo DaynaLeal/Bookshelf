@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 
 const AddForm = () => {
   return(
-    <Form>
+    <Form className="container">
       <Form.Group controlId="exampleForm.ControlInput1">
         <Form.Label>Title</Form.Label>
         <Form.Control type="email" placeholder="title" />
