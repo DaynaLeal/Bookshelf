@@ -1,15 +1,29 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.css';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 
 const NavBar = () => {
   return(
-    <nav className="navbar navbar-dark bg-dark mb-5 sticky-top">
-      <a className="navbar-brand" href="/">
-      {/* <img src="../../public/bookshelfNavBar.png" width="30" height="30" alt="" loading="lazy"/> */}
-      My Bookshelf
-      </a>
-      <a className="nav-link my-2 my-lg-0" href="/mybooks">View Read Books</a>
-    </nav>
+    <Navbar bg="dark" variant="dark" className="sticky-top mb-5">
+      <Navbar.Brand href="/">
+        <img
+          alt=""
+          src="/bookshelfNavBar.png"
+          width="30"
+          height="30"
+          className="d-inline-block align-top"
+        />{' '}
+        My Library
+      </Navbar.Brand>
+      <Nav className="ml-auto" activeKey="/home">
+        <Nav.Item>
+          <Nav.Link href="/mybooks">View Bookshelf</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/addBook">Add a book to Bookshelf</Nav.Link>
+        </Nav.Item>
+      </Nav>
+    </Navbar>
   )
 }
 

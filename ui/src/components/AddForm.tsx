@@ -61,13 +61,18 @@ const AddForm = () => {
         </Form.Control>
       </Form.Group>
       <Form.Group controlId="exampleForm.ControlSelect4">
-        <Form.Label>Example multiple select</Form.Label>
+        <Form.Label>Genre</Form.Label>
         <Form.Control as="select" multiple>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
+          <option>Fantasy</option>
+          <option>YA</option>
+          <option>Romance</option>
+          <option>Adult</option>
+          <option>Dystopian</option>
+          <option>Fiction</option>
+          <option>Non-Fiction</option>
+          <option>History</option>
+          <option>Classic</option>
+          <option>Self-Development</option>
         </Form.Control>
       </Form.Group>
       <Form.Group controlId="exampleForm.ControlTextarea2">
